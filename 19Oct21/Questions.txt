@@ -1,0 +1,12 @@
+1. Program to add two integer numbers.
+2. Program to calculate the volume and surface area of a sphere.
+3. Program to calculate the area of a square while the perimeter is given.
+4. Program to calculate the area of a circle while the circumference is given.
+5. Program to calculate the area of a circle. (Use Symbolic Constant)
+6. Program to calculate the percentage of a student while marks of 5 subjects are given.
+7. Program to calculate the roots of a quadratic equation.
+8. Program to calculate the perimeter and area of a triangle when sides are given.
+9. Program to calculate the time given in Seconds into hours, minutes and seconds.
+10. Program to convert given number of days into Months & Days.
+11. Program to calculate the Simple Interest and Compound Interest.
+12. Program to calculate the Gross Salary when Basic Salary is given. The allowances HRA(%) ,DA (%), PF and Medical are also given. Add the HRA and DA in the Basic Salary but deduct PF and Medical from the Salary.

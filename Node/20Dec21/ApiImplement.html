@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="649271592248-h5dang5uujrjd5fkiafup747633croep.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <title>Document</title>
+
+  <style>
+    .container{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    #map {
+      width: 40%;
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  
+  <h1>Translate Implementation</h1>
+  <div id="google_translate_element">
+    
+  </div>
+
+  <h1>Map Implementation</h1>
+  <div id="map">
+
+  </div>
+
+  <h1>Weather Implementation</h1>
+  <div class="weatherWidget" >
+
+  </div>
+
+  <h1>Sign in With:</h1>
+  <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark">
+
+  </div>
+  <br><br>
+</div>
+
+  <script>
+  let map;
+  
+  function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: 26.85991636697485, lng: 75.75601606832039 },
+      zoom: 10,
+    });
+
+    new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Hello World!",
+  });
+  
+  }
+  </script>
+
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2_MUAc6FbqIb9dTQHBR5SYQRqHX1PBi4&callback=initMap&v=weekly"></script>
+
+  <script>
+    window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+    window.weatherWidgetConfig.push({
+        selector:".weatherWidget",
+        apiKey:"J8RZ9WC65N5DXYKP4S6ZS6YHL", //Sign up for your personal key
+        location:"Jaipur", //Enter an address
+        unitGroup:"metric", //"us" or "metric"
+        forecastDays:7, //how many days forecast to show
+        title:"Jaipur/India", //optional title to show in the 
+        showTitle:true, 
+        showConditions:true
+    });
+   
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script>
+    function onSignIn(googleUser) {
+      // Useful data for your client-side scripts:
+      var profile = googleUser.getBasicProfile();
+      console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+      console.log('Full Name: ' + profile.getName());
+      console.log('Given Name: ' + profile.getGivenName());
+      console.log('Family Name: ' + profile.getFamilyName());
+      console.log("Image URL: " + profile.getImageUrl());
+      console.log("Email: " + profile.getEmail());
+
+      // The ID token you need to pass to your backend:
+      var id_token = googleUser.getAuthResponse().id_token;
+      console.log("ID Token: " + id_token);
+    }
+  </script>
+
+</body>
+</html>

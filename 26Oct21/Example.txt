@@ -1,0 +1,5 @@
+Ex_1: Creating a cookies.
+Ex_2: Creating a session and getting data in another file.
+Ex_3: Creating a Query String.
+Ex_4: Creating a session to count number of page visited.
+Ex_5: Creating a session with form.

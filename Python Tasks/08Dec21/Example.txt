@@ -1,0 +1,6 @@
+1. Fetching form values.
+2. Showing Database Version
+3. Show table data 
+4. Data Insertion
+5. Data Updation
+6. Data Deletion

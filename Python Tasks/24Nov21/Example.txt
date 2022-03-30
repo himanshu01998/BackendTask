@@ -1,0 +1,4 @@
+1. WAP to calculate area of triangle.
+2. WAP to read three numbers and find out maximum.
+3. WAP to read a number and sum of its digits
+4. WAP to print table of number.

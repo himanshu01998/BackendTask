@@ -1,0 +1,3 @@
+Hello this is first line.
+Hello this one is second line
+Adding new line to see append mode

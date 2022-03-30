@@ -1,0 +1,81 @@
+.navbar-nav a{
+    color: white;
+}
+
+.navbar-nav a:hover{
+    background-color: white;
+    box-shadow: 2px 2px 50px rgb(0, 100, 131);
+    border-radius: 2%;
+    color: rgba(var(--bs-info-rgb),var(--bs-bg-opacity));
+}
+
+.navbar-nav input{
+    background-color:rgba(var(--bs-info-rgb),var(--bs-bg-opacity));
+    border:none;
+    color: white;
+}
+
+.navbar-nav input[type="submit"]:hover{
+    background-color: white;
+    box-shadow: 2px 2px 50px rgb(0, 100, 131);
+    border-radius: 2%;
+    color: rgba(var(--bs-info-rgb),var(--bs-bg-opacity));
+}
+
+.delete h1{
+    text-align: center;
+    color: black;
+}
+
+.delete h3{
+    text-align: center;
+}
+
+.btn-del{
+    margin-top: 5%;
+    width: 17%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-del input{
+    border: none;
+    color: white;
+    padding: 3%;
+    background-color: rgb(0, 77, 77);
+    border-radius: 5%;
+}
+
+.btn-del input:hover{
+    color: white;
+    background-color: rgb(0, 43, 92);
+    box-shadow: 2px 2px 10px gray;
+}
+
+.signup-btn input{
+    border: none;
+    color: white;
+    padding: 1%;
+    background-color: rgb(0, 77, 77);
+    border-radius: 5%;
+}
+
+.signup-btn input:hover{
+    color: white;
+    background-color: rgb(0, 43, 92);
+    box-shadow: 2px 2px 10px gray;
+}
+
+.update-btn input{
+    border: none;
+    color: white;
+    padding: 1%;
+    background-color: rgb(0, 77, 77);
+    border-radius: 5%;
+}
+
+.update-btn input:hover{
+    color: white;
+    background-color: rgb(0, 43, 92);
+    box-shadow: 2px 2px 10px gray;
+}

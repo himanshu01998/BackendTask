@@ -1,0 +1,4 @@
+1. String and its Methods.
+2. Lists and its Methods.
+3. Tuples and its Methods.
+4. Dictionary and its Methods.
